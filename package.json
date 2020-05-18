@@ -1,0 +1,27 @@
+{
+  "name": "semantic-ui-sortable-list",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:arcatdmz/Semantic-UI-Sortable-List.git",
+  "author": "Jun Kato <i@junkato.jp>",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "clean": "del-cli dist",
+    "prepublishOnly": "yarn clean && yarn build"
+  },
+  "dependencies": {
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-sortable-hoc": "^1.11.0",
+    "semantic-ui-react": "^0.88.2",
+    "styled-jsx": "^3.3.0"
+  },
+  "devDependencies": {
+    "@types/react": "^16.9.35",
+    "@types/react-dom": "^16.9.8",
+    "@types/styled-jsx": "^2.2.8",
+    "del-cli": "^3.0.1",
+    "typescript": "^3.9.2"
+  }
+}
